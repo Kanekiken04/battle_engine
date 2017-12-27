@@ -24,6 +24,7 @@ struct ability_data abilities[] = {
 	},
 	{
 		// DRIZZLE
+		.on_start = drizzle_on_start,
 	},
 	{
 		// SPEEDBOOST
@@ -279,9 +280,11 @@ struct ability_data abilities[] = {
 		// UNBURDEN
 	},
 	{
-		// HEATPROOF
+		// Heatproof
+	
+      .on_base_power = heatproof_on_base_power,
 	},
-	{
+        {
 		// Simple
 		.on_stat_boost_mod = simple_on_stat_boost_mod,
 	},
