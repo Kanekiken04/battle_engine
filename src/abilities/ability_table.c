@@ -89,6 +89,7 @@ struct ability_data abilities[] = {
 	},
 	{
 		// INTIMIDATE
+                 on_start = intimidate_on_start,
 	},
 	{
 		// SHADOWTAG
