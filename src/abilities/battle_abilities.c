@@ -121,7 +121,7 @@ u8 immunity_on_status(u8 user, u8 source, u16 ailment , struct anonymous_callbac
 u8 intimidate_on_start(u8 user, u8 source, u16 ailment , struct anonymous_callback* acb)
 { 
     if(user==source)return;
-     stat_boost(user,ATTACK_,MOD-1);
+     stat_boost(user,ATTACK_MOD,-1);
       return;
 }
 // SHADOWTAG
