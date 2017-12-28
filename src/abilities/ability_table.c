@@ -346,6 +346,7 @@ struct ability_data abilities[] = {
 	},
 	{
 		// MOLDBREAKER
+               .on_damage=moldbreaker_on_damage
 	},
 	{
 		// SUPERLUCK
