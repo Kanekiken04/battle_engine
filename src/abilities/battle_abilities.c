@@ -357,7 +357,12 @@ void technician_on_base_power(u8 user, u8 source, u16 move, struct anonymous_cal
 // KLUTZ
 
 // MOLDBREAKER
-
+u8 moldbreaker_on_tryhit(u8 user, u8 source, u16 move, struct anonymous_callback* acb)
+{
+    if (user != source) return;
+    B_MOVE_IGNORING_ABILITIES(user);
+ return;
+}
 // SUPERLUCK
 
 // AFTERMATH
