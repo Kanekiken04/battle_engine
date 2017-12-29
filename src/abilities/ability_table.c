@@ -285,9 +285,9 @@ struct ability_data abilities[] = {
 	},
 	{
 		// Heatproof
-                .on_base_power = heatproof_on_base_power,
+        .on_base_power = heatproof_on_base_power,
 	},
-        {
+    {
 		// Simple
 		.on_stat_boost_mod = simple_on_stat_boost_mod,
 	},
@@ -422,6 +422,7 @@ struct ability_data abilities[] = {
 	},
 	{
 		// DEFIANT
+		.after_stat_boost_mod = defiant_after_stat_boost_mod,
 	},
 	{
 		// DEFEATIST
@@ -554,6 +555,7 @@ struct ability_data abilities[] = {
 	},
 	{
 		// COMPETITIVE
+		.after_stat_boost_mod = competitive_after_stat_boost_mod,
 	},
 	{
 		// Strong Jaw
