@@ -371,7 +371,15 @@ u8 moldbreaker_on_tryhit(u8 user, u8 source, u16 move, struct anonymous_callback
 // SUPERLUCK
 
 // AFTERMATH
-
+u8 aftermath_on_damage(u8 user, u8 source, u16 move, struct anonymous_callback* acb)
+ {    
+    if (user ==source) return;
+    if( B_IS_FAINTED(source))
+      {          
+          B_CURRENT_HP(user)=B_CURRENT_HP(user)- NUM_MOD(B_TOTAL_HP(user),25);
+           }
+return;
+}
 // ANTICIPATION
 
 // FOREWARN
