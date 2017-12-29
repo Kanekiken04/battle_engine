@@ -519,6 +519,7 @@ struct ability_data abilities[] = {
 	},
 	{
 		// IRONBARBS
+                .on_damage=ironbarbs_on_damage
 	},
 	{
 		// ZENMODE
