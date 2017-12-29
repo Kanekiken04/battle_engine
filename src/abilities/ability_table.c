@@ -353,6 +353,7 @@ struct ability_data abilities[] = {
 	},
 	{
 		// AFTERMATH
+               .on_damage=aftermath_on_damage
 	},
 	{
 		// ANTICIPATION
