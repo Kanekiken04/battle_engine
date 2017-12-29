@@ -509,7 +509,14 @@ void defiant_after_stat_boost_mod(u8 user, u8 source, u16 stat_id, struct anonym
 // SANDFORCE
 
 // IRONBARBS
-
+u8 ironbarbs_on_damage(u8 user, u8 source, u16 move, struct anonymous_callback* acb)
+ {    
+    if (user ==source) return;
+    if(IS_CONTACT(move)) 
+      {   B_CURRENT_HP(user)=B_CURRENT_HP(user)-NUM_MOD(B_TOTAL_HP(user),125)*1/10;
+           }
+return;
+}
 // ZENMODE
 
 // VICTORYSTAR
